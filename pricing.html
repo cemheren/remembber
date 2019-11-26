@@ -1,71 +1,67 @@
 ---
 title: Pricing
-heading: Find the perfect plan for your business
-description: All plans include our award winning sales optimization solution to track your sales in real time.
+heading: Start free, decide if it's worth the upgrade
+description: Librarian is freeware, the first 100 documents you create are free. After that you need to purchase the Premium plan.
 pricing_table:
-  - name: Basic
+  - name: Free
     color: "#8e8e8e"
     features:
-      - text: $25 per month
+      - text: Free with no time limit
         highlight: true
-      - text: Up to 5 users
+      - text: Up to 100 documents to search 
         highlight: false
-      - text: Basic lead scoring
+      - text: Unlimited tags
         highlight: false
-      - text: CRM
+      - text: Basic support
         highlight: false
-      - text: Basic reporting
-        highlight: false
-      - text: Sales map
+      - text: Basic export
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=basic
-      text: Get started
-  - name: Pro
+      link: 'https://allbuilds.blob.core.windows.net/wanshitong/downloads/librarian Setup 0.0.21.exe'
+      text: Download now
+  - name: Premium
     color: "#4a4a4a"
     features:
-      - text: $99 per month
+      - text: $40 one time purchase
         highlight: true
       - text: Everything in Basic
         highlight: false
-      - text: Up to 25 users
+      - text: No document search limit
         highlight: false
-      - text: Advanced lead scoring
+      - text: Advanced support
         highlight: false
-      - text: Pipeline management
-        highlight: false
-      - text: Advanced reporting
+      - text: Unlimited export
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=pro
-      text: Get started
-  - name: Professional
+      link: 'https://allbuilds.blob.core.windows.net/wanshitong/downloads/librarian Setup 0.0.21.exe'
+      text: Download now, upgrade later
+  - name: Enterprise
     color: "#000000"
     features:
-      - text: $299 per month
+      - text: Custom invoicing
         highlight: true
-      - text: Everything in Basic and Pro
+      - text: Custom authentication models
         highlight: false
-      - text: Up to 100 users
+      - text: Everything in Premium
         highlight: false
-      - text: Campaign builder
+      - text: Document sharing between users
         highlight: false
-      - text: Machine learning
-        highlight: false
-      - text: Calendar
+      - text: Create and manage teams
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=professional
-      text: Get started
+      link: mailto:akifheren@gmail.com
+      text: Send us an email
 faq:
   - question: What types of payment do you accept?
-    answer: Credit cards including MasterCard, Visa or American Express.
-  - question: Can I change my plan at a later time?
-    answer: Yes, you can upgrade and downgrade your plan at anytime.
+    answer: Credit cards including MasterCard, Visa or American Express. Payments go through Stripe and completely secure.
+  - question: Can I change my mind at a later time?
+    answer: Yes, you can request a refund through support in 30 days. 
+  - question: Can I share my product key?
+    answer: Yes, unless we detect you're abusing the system. Sharing a single key on multiple computers is OK. 
   - question: Do you offer pricing for nonprofit organizations?
     answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
   - question: Questions?
-    answer: Contact us for any further questions at <a href="#">john@business.com</a>.
+    answer: Contact us for any further questions at <a href="mailto:akifheren@gmail.com">akifheren@gmail.com</a> or call our CA office at (760) 364-6209‬.
 ---
 <div class="plans">
 	{% for plan in page.pricing_table %}
