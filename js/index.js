@@ -4,6 +4,7 @@ const osxDownload = "https://allbuilds.blob.core.windows.net/wanshitong/download
 
 document.addEventListener('DOMContentLoaded', function(){ 
     setDownloadButton();
+    setBlinkingOwl();
 
 }, false);
 
@@ -17,4 +18,22 @@ function setDownloadButton() {
         downloadLink.setAttribute("href", winDownload);
         downloadLink.textContent = "Download for Windows";
     }
+}
+
+function setBlinkingOwl(){
+
+    (function loop() {
+        var rand = Math.round(Math.random() * (5000 - 2000)) + 2000;
+        setTimeout(function() {
+                
+                var owl = document.getElementById("owl");
+                owl.src = "../images/raw/Logo/Full/icon_owl_closed_eyes.png";
+        
+                setTimeout(() => {
+                    owl.src = "../images/raw/Logo/Full/icon_owl.png";
+                }, 100);
+
+                loop();  
+        }, rand);
+    }());
 }
