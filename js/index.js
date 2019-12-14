@@ -1,5 +1,5 @@
-const winDownload = "https://allbuilds.blob.core.windows.net/wanshitong/downloads/librarian Setup 0.0.32.exe";
-const osxDownload = "https://allbuilds.blob.core.windows.net/wanshitong/downloads/librarian-0.0.32.dmg";
+const winDownload = "https://allbuilds.blob.core.windows.net/wanshitong/downloads/librarian Setup 0.0.33.exe";
+const osxDownload = "https://allbuilds.blob.core.windows.net/wanshitong/downloads/librarian-0.0.33.dmg";
 
 
 document.addEventListener('DOMContentLoaded', function(){ 
