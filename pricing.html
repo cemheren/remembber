@@ -1,6 +1,6 @@
 ---
 title: Pricing
-heading: Start free, decide if it's worth the upgrade
+heading: Start free, then upgrade if you need
 description: Librarian is freeware, the first 100 documents you create are free. After that you need to purchase the Premium plan.
 pricing_table:
   - name: Free
@@ -8,7 +8,7 @@ pricing_table:
     features:
       - text: Free with no time limit
         highlight: true
-      - text: Up to 100 documents to search 
+      - text: Create Up to 100 documents 
         highlight: false
       - text: Unlimited tags
         highlight: false
@@ -17,14 +17,14 @@ pricing_table:
       - text: Basic export
         highlight: false
     call_to_action:
-      link: 'https://allbuilds.blob.core.windows.net/wanshitong/downloads/librarian Setup 0.0.26.exe'
+      link: '/'
       text: Download now
   - name: Premium
     color: "#4a4a4a"
     features:
       - text: $40 one time purchase
         highlight: true
-      - text: Everything in Basic
+      - text: Everything in Free
         highlight: false
       - text: No document search limit
         highlight: false
@@ -33,10 +33,10 @@ pricing_table:
       - text: Unlimited export
         highlight: false
     call_to_action:
-      link: 'https://allbuilds.blob.core.windows.net/wanshitong/downloads/librarian Setup 0.0.26.exe'
+      link: '/'
       text: Download now, upgrade later
   - name: Enterprise
-    color: "#000000"
+    color: "#020079"
     features:
       - text: Custom invoicing
         highlight: true
@@ -53,13 +53,13 @@ pricing_table:
       text: Send us an email
 faq:
   - question: What types of payment do you accept?
-    answer: Credit cards including MasterCard, Visa or American Express. Payments go through Stripe and completely secure.
-  - question: Can I change my mind at a later time?
-    answer: Yes, you can request a refund through support in 30 days. 
+    answer: We accept MasterCard, Visa or American Express. Payments are run through Stripe and completely secure.
+  - question: What if I change my mind?
+    answer: Not a problem, simply request a refund through support within 30 days to get a full refund. 
   - question: Can I share my product key?
-    answer: Yes, unless we detect you're abusing the system. Sharing a single key on multiple computers is OK. 
+    answer: Yes, sharing a single key on a few computers is OK. But if we detect that you are abusing our system, we will block the key.
   - question: Do you offer pricing for nonprofit organizations?
-    answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
+    answer: Yes! We love supporting good causes. Please send us a message and we'll set you up with our nonprofit pricing.
   - question: Questions?
     answer: Contact us for any further questions at <a href="mailto:akifheren@gmail.com">akifheren@gmail.com</a> or call our CA office at (760) 364-6209‬.
 ---
@@ -74,7 +74,9 @@ faq:
 			{% endfor %}
 
 			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
+				<li class="pricing-cta">
+          <div class="button">
+            <a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
 			{% endif %}
 		</ul>
 	{% endfor %}
